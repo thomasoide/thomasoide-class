@@ -71,21 +71,21 @@ def format_nomination_votes(data):
 
     for vote in data['results']['votes']:
 
-        date = data['results']['votes']['date']
+        date = data['results']['votes'][0]['date']
 
-        question = data['results']['votes']['question']
+        question = data['results']['votes'][0]['question']
 
-        description = data['results']['votes']['description']
+        description = data['results']['votes'][0]['description']
 
-        result = data['results']['votes']['result']
+        result = data['results']['votes'][0]['result']
 
-        yes = data['results']['votes']['total']['yes']
+        yes = data['results']['votes'][0]['total']['yes']
 
-        no = data['results']['votes']['total']['no']
+        no = data['results']['votes'][0]['total']['no']
 
-        present = data['results']['votes']['total']['present']
+        present = data['results']['votes'][0]['total']['present']
 
-        not_voting = data['results']['votes']['total']['not_voting']
+        not_voting = data['results']['votes'][0]['total']['not_voting']
 
     ###################
 
